@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 int main(){
-	int num;
-	scanf("%d",&num);
-	printf("Nhap so:",num);
+	int n, arr[100];
+	printf("Nhap so pt mang: ",n);
+	scanf("%d",&n);
 	
-	if (num > 0){
-		printf("So %d la so duong",num);
-	}
-	else if (num < 0 ){
-		printf(" So %d la so am",num);
-	}
-	else{
-		printf("La so khong am cung khong duong",num);
+	for ( int i = 0; i < n; i++){
+		printf("\nNhap gia tri cac pt: ",arr[i]);
+		scanf("%d",&arr[i]);
 	}
 	
+	for ( int i = 0; i < n; i++){
+		if(arr[i] % 2 == 0 ){
+			printf ("\nSo chan tim duoc trong mang la:%d",arr[i]);
+		}
+	}
 	return 0;
 }
